@@ -1,5 +1,5 @@
 const fs = require("fs");
-const { createPromptModule } = require("inquirer");
+
 
 const writeFile = fileContent => {
     return new Promise((resolve, reject) => {
@@ -21,7 +21,7 @@ const writeFile = fileContent => {
   };
 
   const copyFile = () => {
-      return new Promise(() => {
+      return new Promise((resolve, reject) => {
         fs.copyFile("./src/style.css", "./dist/style.css", err => {
             if (err) {
               reject(err);
@@ -31,9 +31,9 @@ const writeFile = fileContent => {
             resolve({
                 ok: true, 
                 message: "File created!"
-            });
+        });
       });
-  });
-};
+    });
+ };
 
 module.exports = { writeFile, copyFile };
