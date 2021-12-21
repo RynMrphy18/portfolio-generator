@@ -1,7 +1,7 @@
 :root {
-  --primary: #9dbdc6;
+  --primary: #5aafc7;
   --secondary: #daeaef;
-  --tertiary: #ff3d2e;
+  --tertiary: #200705;
   --light: #ffffff;
   --dark: #272f32;
   --border-radius: 0.3rem;
@@ -20,7 +20,7 @@ body {
   background-color: var(--secondary);
   margin: 0;
   padding: 0;
-  font-family: 'Public Sans', sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-weight: 300;
   color: var(--dark);
   line-height: 1.5;
